@@ -1,11 +1,12 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 @Component({
     selector: "Home",
     templateUrl: "./home.component.html"
 })
-export class HomeComponent implements OnInit {
-    constructor() {
-    }
-    ngOnInit(): void {
+export class HomeComponent {
+    directiveApplied = false;
+    constructor() {}
+    toggleDirective(): void {
+        this.directiveApplied = !this.directiveApplied;
     }
 }
