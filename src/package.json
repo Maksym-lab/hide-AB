@@ -43,6 +43,7 @@
 	"license": "MIT",
 	"homepage": "https://gitlab.com/knowlysis/external/nativescript-hide-action-bar",
 	"devDependencies": {
+		"@angular/core": "^8.0.0",
 		"tns-core-modules": "^6.0.0",
 		"tns-platform-declarations": "^6.0.0",
 		"typescript": "~3.4.5",

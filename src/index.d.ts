@@ -1,3 +1,1 @@
-import { Common } from './hide-action-bar.common';
-export declare class HideActionBar extends Common {
-}
+export * from './angular/hide-action-bar.module';
