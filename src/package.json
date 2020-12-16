@@ -2,7 +2,7 @@
 	"name": "nativescript-hide-action-bar",
 	"version": "1.0.0",
 	"description": "NativeScript Angular plugin for easily hiding the ActionBar.",
-	"main": "hide-action-bar",
+	"main": "index.ts",
 	"typings": "index.d.ts",
 	"nativescript": {
 		"platforms": {

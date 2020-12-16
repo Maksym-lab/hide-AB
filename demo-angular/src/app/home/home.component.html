@@ -2,7 +2,6 @@
     <Label text="Man, this is an annoying ActionBar..."></Label>
 </ActionBar>
 <GridLayout>
-    <Label hideActionBar *ngIf="directiveApplied" text="The pesky ActionBar has been eradicated!" textWrap="true"></Label>
-    <Button text="{{ !directiveApplied ? 'Apply The Directive!' : 'Remove The Directive'}}"
-        (tap)="toggleDirective()"></Button>
+    <Label hideActionBar *ngIf="directiveApplied" text="That pesky ActionBar has been eradicated!" textWrap="true"></Label>
+    <Button *ngIf="!directiveApplied" text="Apply The Directive!" (tap)="toggleDirective()"></Button>
 </GridLayout>
