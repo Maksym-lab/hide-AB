@@ -6,6 +6,7 @@ var HideActionBarDirective = (function () {
     function HideActionBarDirective(page) {
         this.page = page;
         this.page.actionBarHidden = true;
+        console.log('Test');
     }
     HideActionBarDirective = __decorate([
         core_1.Directive({

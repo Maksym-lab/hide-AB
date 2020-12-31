@@ -1,6 +1,6 @@
 {
-	"name": "nativescript-hide-action-bar",
-	"version": "1.0.0",
+	"name": "@microexcel-csd/nativescript-hide-action-bar",
+	"version": "0.0.1",
 	"description": "NativeScript Angular plugin for easily hiding the ActionBar.",
 	"main": "index.ts",
 	"typings": "index.d.ts",
@@ -24,7 +24,7 @@
 		"demo-angular.ios": "npm i && cd ../demo-angular && tns run ios",
 		"demo-angular.android": "npm i && cd ../demo-angular && tns run android",
 		"demo-angular.reset": "cd ../demo-angular && npx rimraf -- hooks node_modules platforms package-lock.json",
-		"plugin.prepare": "npm run build undefined && cd ../demo-angular && tns plugin remove nativescript-hide-action-bar && tns plugin add ../src",
+		"plugin.prepare": "npm run build undefined && cd ../demo-angular && tns plugin remove @microexcel-csd/nativescript-hide-action-bar && tns plugin add ../src",
 		"clean": "npm run demo-angular.reset && npx rimraf -- node_modules package-lock.json && npm i"
 	},
 	"keywords": [
@@ -36,7 +36,7 @@
 		"iOS",
 		"directive"
 	],
-	"author": "Microexcel-CSD",
+	"author": "Microexcel CSD",
 	"bugs": {
 		"url": "https://gitlab.com/knowlysis/external/nativescript-hide-action-bar/-/issues"
 	},
