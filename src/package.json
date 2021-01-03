@@ -14,6 +14,9 @@
 		"type": "git",
 		"url": "https://gitlab.com/knowlysis/external/nativescript-hide-action-bar"
 	},
+	"contributors": [
+		"Tyler Hendrickson <tyler.hendrickson@microexcel.com> (http://tylerhendrickson.me)"
+	],
 	"scripts": {
 		"tsc": "npm i && tsc",
 		"build": "npm run tsc && npm run build.native",
@@ -34,6 +37,8 @@
 		"hide",
 		"Android",
 		"iOS",
+		"code",
+		"sharing",
 		"directive"
 	],
 	"author": "Microexcel CSD",
