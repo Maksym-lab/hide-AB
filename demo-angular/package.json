@@ -8,9 +8,12 @@
       "version": "6.4.0"
     }
   },
-  "description": "NativeScript Application",
-  "license": "SEE LICENSE IN <your-license-filename>",
-  "repository": "<fill-your-repository-here>",
+  "scripts": {
+    "start": "npm run android && npm run ios",
+    "ios": "tns run ios --emulator --env.aot --env.sourceMap",
+    "android": "tns run android --env.aot --env.sourceMap"
+  },
+  "description": "Demo NativeScript Angular project to test the plugin.",
   "dependencies": {
     "@angular/animations": "~8.2.0",
     "@angular/common": "~8.2.0",

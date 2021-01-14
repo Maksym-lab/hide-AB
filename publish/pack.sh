@@ -18,7 +18,7 @@ pack() {
     node_modules/.bin/ncp "$ROOT_DIR"/README.md "$TO_SOURCE_DIR"/README.md
     echo 'Building /src...'
     cd "$TO_SOURCE_DIR"
-    node_modules/.bin/tsc
+    npm run build
     cd ..
     echo 'Creating package...'
     mkdir "$PACK_DIR"

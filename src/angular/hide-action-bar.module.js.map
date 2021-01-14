@@ -1,1 +1,0 @@
-{"version":3,"file":"hide-action-bar.module.js","sourceRoot":"","sources":["hide-action-bar.module.ts"],"names":[],"mappings":";;AAAA,sCAAyC;AACzC,yEAAqE;AAMrE;IAAA;IAAmC,CAAC;IAAvB,mBAAmB;QAJ/B,eAAQ,CAAC;YACN,YAAY,EAAE,CAAC,kDAAsB,CAAC;YACtC,OAAO,EAAE,CAAC,kDAAsB,CAAC;SACpC,CAAC;OACW,mBAAmB,CAAI;IAAD,0BAAC;CAAA,AAApC,IAAoC;AAAvB,kDAAmB"}

@@ -1,10 +1,7 @@
+*.log
 *.map
 *.ts
 !*.d.ts
-tsconfig.json
-scripts/*
-platforms/android/*
+/platforms/android/**/*
 !platforms/android/include.gradle
-!platforms/android/*.aar
-!platforms/android/*.jar
-.DS_Store
+!platforms/android/nativescript_facebook.aar

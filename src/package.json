@@ -1,62 +1,78 @@
 {
-	"name": "@microexcel-csd/nativescript-hide-action-bar",
-	"version": "0.0.1",
-	"description": "NativeScript Angular plugin for easily hiding the ActionBar.",
-	"main": "index.ts",
-	"typings": "index.d.ts",
-	"nativescript": {
-		"platforms": {
-			"android": "6.0.0",
-			"ios": "6.0.1"
-		}
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://gitlab.com/knowlysis/external/nativescript-hide-action-bar"
-	},
-	"contributors": [
-		"Tyler Hendrickson <tyler.hendrickson@microexcel.com> (http://tylerhendrickson.me)"
-	],
-	"scripts": {
-		"tsc": "npm i && tsc",
-		"build": "npm run tsc && npm run build.native",
-		"build.native": "node scripts/build-native.js",
-		"tslint": "cd .. && tslint \"**/*.ts\" --config tslint.json --exclude \"**/node_modules/**\"",
-		"ci.tslint": "npm i && tslint '**/*.ts' --config '../tslint.json' --exclude '**/node_modules/**' --exclude '**/platforms/**'",
-		"prepack": "npm run build.native",
-		"demo-angular.ios": "npm i && cd ../demo-angular && tns run ios",
-		"demo-angular.android": "npm i && cd ../demo-angular && tns run android",
-		"demo-angular.reset": "cd ../demo-angular && npx rimraf -- hooks node_modules platforms package-lock.json",
-		"plugin.prepare": "npm run build undefined && cd ../demo-angular && tns plugin remove @microexcel-csd/nativescript-hide-action-bar && tns plugin add ../src",
-		"clean": "npm run demo-angular.reset && npx rimraf -- node_modules package-lock.json && npm i"
-	},
-	"keywords": [
-		"NativeScript",
-		"Angular",
-		"ActionBar",
-		"hide",
-		"Android",
-		"iOS",
-		"code",
-		"sharing",
-		"directive"
-	],
-	"author": "Microexcel CSD",
-	"bugs": {
-		"url": "https://gitlab.com/knowlysis/external/nativescript-hide-action-bar/-/issues"
-	},
-	"license": "MIT",
-	"homepage": "https://gitlab.com/knowlysis/external/nativescript-hide-action-bar",
-	"devDependencies": {
-		"@angular/core": "^8.0.0",
-		"tns-core-modules": "^6.0.0",
-		"tns-platform-declarations": "^6.0.0",
-		"typescript": "~3.4.5",
-		"prompt": "^1.0.0",
-		"rimraf": "^2.6.3",
-		"tslint": "^5.12.1",
-		"semver": "^5.6.0"
-	},
-	"dependencies": {},
-	"bootstrapper": "nativescript-plugin-seed"
+  "name": "@microexcel-csd/nativescript-hide-action-bar",
+  "version": "0.0.7",
+  "description": "NativeScript Angular plugin for easily hiding the ActionBar.",
+  "license": "MIT",
+  "author": "Microexcel CSD",
+  "contributors": [
+    "Tyler Hendrickson <tyler.hendrickson@microexcel.com> (http://tylerhendrickson.me)"
+  ],
+  "keywords": [
+    "NativeScript",
+    "Angular",
+    "ActionBar",
+    "hide",
+    "Android",
+    "iOS",
+    "code",
+    "sharing",
+    "directive"
+  ],
+  "homepage": "https://gitlab.com/knowlysis/external/nativescript-hide-action-bar",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/knowlysis/external/nativescript-hide-action-bar"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/knowlysis/external/nativescript-hide-action-bar/-/issues"
+  },
+  "main": "index.ts",
+  "typings": "index.d.ts",
+  "scripts": {
+    "pack": "cd ../publish && sh pack.sh",
+    "publish": "cd ../publish && sh publish.sh",
+    "start": "cd ../demo-angular && npm start",
+    "ios": "cd ../demo-angular && npm run ios",
+    "android": "cd ../demo-angular && npm run android",
+    "build": "npm i && tsc && tns plugin build && npm run ngc",
+    "tsc": "tsc -skipLibCheck",
+    "build.native": "node scripts/build-native.js",
+    "tslint": "cd .. && tslint \"**/*.ts\" --config tslint.json --exclude \"**/node_modules/**\"",
+    "ci.tslint": "npm i && tslint '**/*.ts' --config '../tslint.json' --exclude '**/node_modules/**' --exclude '**/tns_modules/**' --exclude '**/*.d.ts'",
+    "prepack": "npm run build.native",
+    "demo-angular.ios": "npm i && cd ../demo-angular && tns run ios",
+    "demo-angular.android": "npm i && cd ../demo-angular && tns run android",
+    "demo-angular.reset": "cd ../demo-angular && npx rimraf -- hooks node_modules platforms package-lock.json",
+    "plugin.prepare": "npm run tsc && cd ../demo && @microexcel-csd/nativescript-hide-action-bar && tns plugin add ../src",
+    "clean": "npm run demo-angular.reset && npx rimraf -- node_modules package-lock.json && npm i",
+    "ngc": "node --max-old-space-size=8192 ./node_modules/.bin/ngc"
+  },
+  "nativescript": {
+    "platforms": {
+      "android": "6.0.0",
+      "ios": "6.0.0"
+    }
+  },
+  "devDependencies": {
+    "@angular/common": "^8.2.14",
+    "@angular/compiler": "^8.0.0",
+    "@angular/compiler-cli": "^8.0.0",
+    "@angular/core": "^8.0.0",
+    "@angular/forms": "^8.2.14",
+    "@angular/platform-browser": "^8.2.14",
+    "@angular/platform-browser-dynamic": "^8.2.14",
+    "@angular/router": "^8.2.14",
+    "codelyzer": "^5.2.1",
+    "nativescript-angular": "^8.21.0",
+    "prompt": "^1.0.0",
+    "rimraf": "^2.6.3",
+    "rxjs": "^6.5.4",
+    "semver": "^5.6.0",
+    "tns-core-modules": "^6.0.0",
+    "tns-platform-declarations": "^6.0.0",
+    "tslint": "^5.12.1",
+    "typescript": "~3.5.3",
+    "zone.js": "^0.9.1"
+  },
+  "dependencies": {}
 }
