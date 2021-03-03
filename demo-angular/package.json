@@ -13,7 +13,7 @@
     "ios": "tns run ios --emulator --env.aot --env.sourceMap",
     "android": "tns run android --env.aot --env.sourceMap"
   },
-  "description": "Demo NativeScript Angular project to test the plugin.",
+  "description": "NativeScript Hide Action Bar demo.",
   "dependencies": {
     "@angular/animations": "~8.2.0",
     "@angular/common": "~8.2.0",
