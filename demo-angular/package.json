@@ -23,12 +23,12 @@
     "@angular/platform-browser": "~8.2.0",
     "@angular/platform-browser-dynamic": "~8.2.0",
     "@angular/router": "~8.2.0",
+    "@nativescript/angular": "~8.21.0",
+    "@nativescript/core": "~6.4.0",
     "@nativescript/theme": "~2.3.0",
     "@microexcel-csd/nativescript-hide-action-bar": "file:../src",
-    "nativescript-angular": "~8.21.0",
     "reflect-metadata": "~0.1.12",
     "rxjs": "^6.4.0",
-    "tns-core-modules": "~6.4.0",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {

@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var page_1 = require("tns-core-modules/ui/page/page");
+var page_1 = require("@nativescript/core/ui/page/page");
 var HideActionBarDirective = (function () {
     function HideActionBarDirective(page) {
         this.page = page;
