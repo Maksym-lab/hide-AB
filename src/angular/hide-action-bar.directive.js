@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var page_1 = require("@nativescript/core/ui/page/page");
+var core_2 = require("@nativescript/core");
 var HideActionBarDirective = (function () {
     function HideActionBarDirective(page) {
         this.page = page;
@@ -11,7 +11,7 @@ var HideActionBarDirective = (function () {
         core_1.Directive({
             selector: '[hideActionBar]'
         }),
-        __metadata("design:paramtypes", [page_1.Page])
+        __metadata("design:paramtypes", [core_2.Page])
     ], HideActionBarDirective);
     return HideActionBarDirective;
 }());

@@ -3,10 +3,8 @@
 .DS_Store
 */node_modules/
 */platforms/
-*.js
 *.js.map
 *.esm.json
-*.tns.json
 *.metadata.json
 *.log
 demo-angular/*.d.ts

@@ -1,5 +1,5 @@
 import { Directive } from '@angular/core';
-import { Page } from '@nativescript/core/ui/page/page';
+import { Page } from '@nativescript/core';
 @Directive({
   selector: '[hideActionBar]'
 })
