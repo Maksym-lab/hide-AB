@@ -1,6 +1,6 @@
 {
   "name": "@microexcel-csd/nativescript-hide-action-bar",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "NativeScript Angular plugin for easily hiding the ActionBar.",
   "license": "MIT",
   "author": "Microexcel CSD",
