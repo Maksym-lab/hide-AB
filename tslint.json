@@ -1,35 +1,14 @@
 {
   "extends": "tslint:recommended",
+  "rulesDirectory": [
+    "codelyzer"
+  ],
   "rules": {
     "array-type": false,
     "arrow-parens": false,
     "deprecation": {
       "severity": "warning"
     },
-    "completed-docs": [
-      true,
-      "enums",
-      "functions",
-      "interfaces",
-      "methods",
-      "properties",
-      "types"
-    ],
-    "component-class-suffix": true,
-    "contextual-lifecycle": true,
-    "directive-class-suffix": true,
-    "directive-selector": [
-      true,
-      "attribute",
-      "app",
-      "camelCase"
-    ],
-    "component-selector": [
-      true,
-      "element",
-      "app",
-      "kebab-case"
-    ],
     "import-blacklist": [
       true,
       "rxjs/Rx"
@@ -52,13 +31,11 @@
         ]
       }
     ],
-    "no-any": true,
     "no-consecutive-blank-lines": false,
     "no-console": [
       true,
       "debug",
       "info",
-      "log",
       "time",
       "timeEnd",
       "trace"
@@ -78,12 +55,14 @@
     ],
     "object-literal-sort-keys": false,
     "ordered-imports": false,
-    "prefer-conditional-expression": true,
     "quotemark": [
       true,
       "single"
     ],
     "trailing-comma": false,
+    "component-class-suffix": true,
+    "contextual-lifecycle": true,
+    "directive-class-suffix": true,
     "no-conflicting-lifecycle": true,
     "no-host-metadata-property": true,
     "no-input-rename": true,
@@ -94,16 +73,7 @@
     "no-outputs-metadata-property": true,
     "template-banana-in-box": true,
     "template-no-negated-async": true,
-    "typedef": [
-      true,
-      "call-signature",
-      "no-inferred-empty-object-type",
-      "property-declaration"
-    ],
     "use-lifecycle-interface": true,
     "use-pipe-transform-interface": true
-  },
-  "rulesDirectory": [
-    "codelyzer"
-  ]
+  }
 }

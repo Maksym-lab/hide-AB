@@ -1,7 +1,0 @@
-*.log
-*.map
-*.ts
-!*.d.ts
-/platforms/android/**/*
-!platforms/android/include.gradle
-!platforms/android/nativescript_facebook.aar
